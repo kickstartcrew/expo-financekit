@@ -1,0 +1,75 @@
+{
+  "name": "@kickstartcrew/expo-financekit",
+  "version": "0.2.4",
+  "description": "Expo module for iOS FinanceKit integration - access financial data from Apple Wallet",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf build",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run clean && npm run build",
+    "setup:ios": "bash scripts/ios-setup.sh",
+    "postinstall": "echo 'Run npm run setup:ios to configure iOS dependencies'"
+  },
+  "keywords": [
+    "expo",
+    "expo-plugin",
+    "financekit",
+    "ios",
+    "react-native",
+    "apple-wallet",
+    "financial-data",
+    "financekit-ios",
+    "apple-financekit",
+    "wallet",
+    "transactions",
+    "banking"
+  ],
+  "author": {
+    "name": "Roberto Pando",
+    "email": "rob@kickstartcrew.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/kickstartcrew/expo-financekit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kickstartcrew/expo-financekit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kickstartcrew/expo-financekit/issues"
+  },
+  "files": [
+    "build",
+    "src",
+    "ios",
+    "app.plugin.js",
+    "expo-module.config.json"
+  ],
+  "dependencies": {
+    "@expo/config-plugins": "~8.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-native": "~0.73.0",
+    "typescript": "^5.3.0"
+  },
+  "peerDependencies": {
+    "expo": ">=51.0.0",
+    "react": ">=18.0.0",
+    "react-native": ">=0.73.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "expo": {
+    "name": "@kickstartcrew/expo-financekit",
+    "ios": {
+      "deploymentTarget": "17.4"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+# Source files (we publish built files)
+src/
+tsconfig.json
+.eslintrc.js
+
+# Example and test files
+example/
+__tests__/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Development files
+.vscode/
+.idea/
+*.log
+*.tgz
+.DS_Store
+.env
+.env.*
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.github/
+.circleci/
+.travis.yml
+
+# Documentation source files
+docs/
+*.md
+!README.md
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Node modules (should never be published)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Lock files (controversial, but generally not needed in packages)
+package-lock.json
+yarn.lock
+
+# Config files not needed by users
+.prettierrc
+.prettierignore
+.editorconfig
+.babelrc
+jest.config.js
+metro.config.js
+
+# TypeScript source maps (optional, can keep for debugging)
+*.map
+
+# Keep these files:
+# !build/
+# !ios/
+# !app.plugin.js
+# !expo-financekit.podspec
+# !expo-module.config.json
+# !README.md
+# !package.json
+# !LICENSE
